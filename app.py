@@ -71,5 +71,5 @@ enhance_prompt_interface = gr.Interface(
 )
 
 if __name__ == "__main__":
-    video_gen_interface.launch(share=True)
-    enhance_prompt_interface.launch(share=True)
+    video_gen_interface.launch(share=True, server_port=5000)
+    enhance_prompt_interface.launch(share=True, server_port=5000)
