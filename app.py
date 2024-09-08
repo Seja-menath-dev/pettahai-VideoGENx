@@ -71,5 +71,14 @@ enhance_prompt_interface = gr.Interface(
 )
 
 if __name__ == "__main__":
-    video_gen_interface.launch(share=True, server_port=5000)
-    enhance_prompt_interface.launch(share=True, server_port=5000)
+    # Option 1: Binding to localhost (if you're running locally)
+    video_gen_interface.launch(server_name="localhost", server_port=5000)
+    enhance_prompt_interface.launch(server_name="localhost", server_port=5000)
+
+    # Option 2: Using a different port, e.g., 7860
+    # video_gen_interface.launch(server_port=7860)
+    # enhance_prompt_interface.launch(server_port=7860)
+
+    # Option 3: Running without share=True
+    # video_gen_interface.launch()
+    # enhance_prompt_interface.launch()
