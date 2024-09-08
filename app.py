@@ -79,6 +79,6 @@ if __name__ == "__main__":
     # video_gen_interface.launch(server_port=7860)
     # enhance_prompt_interface.launch(server_port=7860)
 
-    # Option 3: Running without share=True
-    # video_gen_interface.launch()
-    # enhance_prompt_interface.launch()
+    Running without share=True
+    video_gen_interface.launch()
+    enhance_prompt_interface.launch()
